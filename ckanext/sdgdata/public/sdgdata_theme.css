@@ -1,0 +1,101 @@
+/* ========================================================================
+   The account masthead bar that contains the admin logo and links
+   ======================================================================== */
+.account-masthead {
+    background: #f2f2f2;
+    border-bottom: #00adef solid 5px !important;
+}
+
+.account-masthead .account .notifications a span {
+    background-color: #008fd5;
+}
+
+.account-masthead .account ul li a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.account-masthead .account ul li a:hover {
+    color: grey;
+    background-color: #fefefe;
+}
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+.masthead {
+    background-color: #008fd5;
+}
+
+.masthead .navigation .nav-pills li a:hover {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.masthead .navigation .nav-pills li.active a {
+    background-color: rgb(74, 74, 74);
+}
+
+.masthead input[type="text"]:focus {
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+.box {
+    box-shadow: none;
+}
+
+.hero .box {
+    border: none;
+}
+
+.homepage .module-search .module-content {
+    color: rgb(68, 68, 68);
+    background-color: white;
+}
+
+.homepage .module-search .tags {
+    background-color: #008fd5;
+}
+
+.module-content:last-child {
+    padding-bottom: 0px;
+}
+
+.homepage .module-search {
+    padding: 0px;
+}
+
+.homepage [role="main"] {
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer,
+body {
+    background-color: #008fd5;
+}
+
+.site-footer,
+.site-footer label,
+.site-footer small {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-primary {
+    background: #00aedf;
+}
+
+.btn-default {
+    background: #d0d0d0;
+}

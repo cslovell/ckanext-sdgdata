@@ -1,0 +1,27 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content box">
+  <header>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Welcome to the SDG Data Hub") }}</h1>
+      <p>
+        {% trans %}The Data Hub will connect researchers authoring peer-reviewed,
+            innovative data science methods with opportunities to pilot and
+            scale up the use of these for compiling and analysing SDG indicators.
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </header>
+
+  {% block home_image %}
+    <section class="featured media-overlay hidden-phone">
+      {% block home_image_content %}
+        <a class="media-image" href="/dataset">
+          <img src="/sdgs_icons.png" alt="SDGs" width="420" height="220" />
+        </a>
+      {% endblock %}
+    </section>
+  {% endblock %}
+</div>

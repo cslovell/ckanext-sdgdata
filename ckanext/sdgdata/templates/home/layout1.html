@@ -1,0 +1,49 @@
+<div role="main">
+    <div class="jumbotron" style="
+    background-image: url('/17-goals.png'); background-size: 30%;
+    background-repeat: no-repeat; background-position: top right">
+    <div class="container" style="color: grey;">
+      <h1 class="display-3">Welcome to the SDG Data Hub!</h1>
+      <p>
+        The UNESCAP Data Hub is a platform for discovering, sharing<br>
+        and learning about data science for SDG research. You can find datasets used in<br>
+        SDG projects, how state-of-the-art data science technologies such as deep learning<br>
+        are being applied to SDG research, and learn about how to reuse existing data and <br>
+        methodologies from UNESCAP partner countries.
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more »</a></p>
+    </div>
+  </div>
+    <div class="container">
+        <div class="row">
+            {% block search %}
+                {% snippet 'home/snippets/search.html' %}
+            {% endblock %}
+        </div>
+                      <div class="row">
+                        <h1>Browse data by SDG</h1>
+                        <img style="display: block; margin-left: auto; margin-right: auto;" src="/sdgs-icons.png" alt="" usemap="#Map" />
+                        <map name="Map" id="Map">
+                          <area alt="SDG1 No Poverty" title="" href="/dataset?q=&tags=SDG1" shape="rect" coords="8,8,108,108" />
+                          <area alt="SDG2 Zero Hunger" title="" href="/dataset?q=&tags=SDG2" shape="rect" coords="126,8,225,108" />
+                          <area alt="SDG3 Good Health and Well-Being" title="" href="/dataset?q=&tags=SDG3" shape="rect" coords="248,8,346,108" />
+                          <area alt="SDG4 Quality Education" title="" href="/dataset?q=&tags=SDG4" shape="rect" coords="365,8,465,108" />
+                          <area alt="SDG5 Gender Equality" title="" href="/dataset?q=&tags=SDG5" shape="rect" coords="485,8,584,108,584" />
+                          <area alt="SDG6 Clean Water and Sanitation" title="" href="/dataset?q=&tags=SDG6" shape="rect" coords="600,8,702,108" />
+                          <area alt="SDG7 Affordable and Clean Energy" title="" href="/dataset?q=&tags=SDG7" shape="rect" coords="8,128,108,228" />
+                          <area alt="SDG8 Decent Work and Economic Growth" title="" href="/dataset?q=&tags=SDG8" shape="rect" coords="126,128,225,228" />
+                          <area alt="SDG9 Industry, Innovation and Infrastructure" title="" href="/dataset?q=&tags=SDG9" shape="rect" coords="248,128,346,228" />
+                          <area alt="SDG10 Reduced Inequalities" title="" href="/dataset?q=&tags=SDG10" shape="rect" coords="365,128,465,228" />
+                          <area alt="SDG11 Sustainable Cities and Communities" title="" href="/dataset?q=&tags=SDG11" shape="rect" coords="485,128,584,228" />
+                          <area alt="SDG12 Responsible Consumption and Production" title="" href="/dataset?q=&tags=SDG12" shape="rect" coords="600,128,702,228" />
+                          <area alt="SDG13 Climate Action" title="" href="/dataset?q=&tags=SDG13" shape="rect" coords="8,247,108,347" />
+                          <area alt="SDG14 Life Below Water" title="" href="/dataset?q=&tags=SDG14" shape="rect" coords="126,247,225,347" />
+                          <area alt="SDG15 Life On Land" title="" href="/dataset?q=&tags=SDG15" shape="rect" coords="248,247,346,347" />
+                          <area alt="SDG16 Peace, Justice and Strong Institutions" title="" href="/dataset?q=&tags=SDG16" shape="rect" coords="365,247,465,347" />
+                          <area alt="SDG17 Partnerships for the Goals" title="" href="/dataset?q=&tags=SDG17" shape="rect" coords="485,247,584,347" />
+                          <area alt="Sustainable Development Goals" title="" href="/dataset?q=SDG*" shape="rect" coords="600,247,702,347" />
+                        </map>
+                      </div>
+                         
+    </div>
+</div>

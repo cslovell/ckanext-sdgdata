@@ -1,0 +1,55 @@
+<div role="main" class="hero">
+  <div class="container">
+    <div class="row row1">
+      <div class="span6 col1">
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
+        {% block stats %}
+          {% snippet 'home/snippets/stats.html' %}
+        {% endblock %}
+      </div>
+      <div class="span6 col2">
+        {% block promoted %}
+          {% snippet 'home/snippets/welcome.html' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
+<div role="main">
+  <div class="container">
+    <div class="row row2">
+      <div class="span6 col2">
+        <p>While there are ongoing efforts to build capacity in big data for
+            SDGs in the UN through training and global inventories of standards
+            and big data projects, there has yet to be a single platform to
+            bring together both information about different data, and how it
+            has been applied to SDG research and development. The SDG Data Hub
+            brings together datasets, published methodology, and its impact on
+            policy-making.</p>
+          <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more »</a></p>
+      </div>
+      <div class="span6 col1">
+
+        <p>The SDG Data Hub brings together key indicator research projects,
+            enables reproducible research and the sharing of methodology,
+            consolidates training methodologies through interactive tutorials,
+            and provides a focal point for governments, industry, research and the
+            development communities broadly to explore and adopt open source
+            data innovations.</p>
+        <p><a class="btn btn-primary btn-lg" href="/projects" role="button">Browse projects »</a></p>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="span6 col1">
+        &nbsp;
+      </div>
+      <div class="span6 col2">
+        {% block featured_project %}
+          {% snippet 'home/snippets/featured_project.html' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
